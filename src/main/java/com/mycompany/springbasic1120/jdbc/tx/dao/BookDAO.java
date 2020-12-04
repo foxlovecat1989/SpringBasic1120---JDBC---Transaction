@@ -1,4 +1,4 @@
-package com.mycompany.springbasic1120.jdbc.tx;
+package com.mycompany.springbasic1120.jdbc.tx.dao;
 
 public interface BookDAO {
     Integer getPrice(Integer bid);

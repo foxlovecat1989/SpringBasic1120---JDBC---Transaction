@@ -1,11 +1,14 @@
-package com.mycompany.springbasic1120.jdbc.tx;
+package com.mycompany.springbasic1120.jdbc.tx.dao;
 
 import javax.naming.spi.DirStateFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class BookDAOImpl implements BookDAO {
+    
+    @Autowired
     private JdbcTemplate jdbcTemplate;
     
     @Override
@@ -32,5 +35,4 @@ public class BookDAOImpl implements BookDAO {
                     + "WHERE wid=?";
         jdbcTemplate.update(sql, cost, wid);
     }
-    
 }
