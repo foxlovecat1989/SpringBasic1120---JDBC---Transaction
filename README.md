@@ -1,2 +1,2 @@
 # SpringBasic1120---JDBC---Transaction
-# Transaction - Resposity - Service
+# Transaction - Resposity -> Service -> Controller
